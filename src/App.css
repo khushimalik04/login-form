@@ -1,0 +1,129 @@
+/* Reset default margins & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Login box styling */
+.login-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Input field styling */
+.input-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Wrapper for consistent styling */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.password-wrapper input,
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+
+.password-wrapper input:focus,
+.input-group input:focus {
+  border-color: #764ba2;
+  outline: none;
+  background: #fff;
+}
+
+/* Show/Hide button inside input field */
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  background: none;
+  border: none;
+  color: gray;
+  padding: 5px;
+}
+
+.toggle-password:hover {
+  color: #764ba2;
+}
+
+/* Stylish login button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background: #764ba2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background: #5a3d8d;
+}
+
+/* Sign-up link */
+.signup-text {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #764ba2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
